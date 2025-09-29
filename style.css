@@ -1,11 +1,96 @@
 :root{
-    --text-primary: #000;
-    --text-secondary: #000;
-    --bg-primary: #000;
-    --bg-secondary-initial:#000;
-    --bg-secondary-final: #000;
-    --font-h1: 2px;
-    --font-h2: 2px;
-    --font-span: 3px;
-    }
+    --text-primary: #ffffff;
+    --text-secondary: #182738;
+    --text-dark: #000000;
+    --btn-color: #CB935D;
+    --bg-primary: #F9F7F5;
+    --bg-secondary-initial:#0D1825;
+    --bg-secondary-final: #1F3044;
+    --font-h2: 1.8em;
+    --font-text: 1.2em;
+    --font-span: 1.3em;
+}
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.lin{
+    background: linear-gradient(354deg,var(--bg-secondary-initial) 0%, var(--bg-secondary-final) 100%);;
+}
+
+.link:hover{
+color: var(--btn-color);
+}
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+/* Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Fade In Down */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-down {
+  animation: fadeInDown 0.8s ease-out;
+}
+
+/* Fade In Left */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in-left {
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+/* Fade In Right */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in-right {
+  animation: fadeInRight 0.8s ease-out;
+}
