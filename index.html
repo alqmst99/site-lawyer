@@ -4,41 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/icons/legal-ico.png" type="image/x-icon">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Web-Lawyer</title>
 </head>
 
 <body>
-    <header class="lin  w-full mx-auto">
+    <header class="lin w-full mx-auto">
         <nav class="flex justify-between items-center h-full pl-[50px] pr-[60px] mb-20">
             <div class="w-[188px] h-[90px]">
                 <img src="./assets/image/law-logo.png" alt="img-logo" class="img-logo" width="80px">
             </div>
-            <ul class="flex flex-1  justify-between text-white">
-                <li class="link"><a href="ref">Home</a></li>
-                <li class="link"><a href="ref">About US</a></li>
-                <li class="link"><a href="ref">Practice Area</a></li>
-                <li class="link"><a href="ref">Blog's</a></li>
-                <li class="link"><a href="ref ">Contact Us</a></li>
+            <ul class="flex flex-1 justify-between text-white p-5">
+                <li class="link"><a class="text-2xl uppercase "  href="ref">Home</a></li>
+                <li class="link"><a  class="text-2xl uppercase " href="ref">About US</a></li>
+                <li class="link"><a  class="text-2xl uppercase " href="ref">Practice Area</a></li>
+                <li class="link"><a  class="text-2xl uppercase " href="ref">Blog's</a></li>
+                <li class="link"><a  class="text-2xl uppercase " href="ref ">Contact Us</a></li>
 
             </ul>
         </nav>
-        <section class="home section flex flex-row  justify-center item-center max-sm:flex-col-reverse">
+        <section
+            class="home section flex flex-row  justify-center item-center max-lg:flex-col-reverse fade-container mb-8 px-10"
+            id="home">
             <div class="card container text-cester text-white flex flex-1 flex-col p-12 fade-in-left">
-                <h3 class="text-semibold mb-6">GET FIERCE LEGAL SUPPORT</h3>
-                <div class="title">
-                    <h2 class="text-2xl text-white mb-6 text-bold">We Provide The Best
+                <h3 class="text-semibold mb-8">GET FIERCE LEGAL SUPPORT</h3>
+                <div class="title mb-6">
+                    <h2 class="text-[2.5em] text-white text-bold">We Provide The Best
                         Possible <span class="span text-[#CB935D]"> Legal Services</span></h2>
                 </div>
                 <div class="desc">
-                    <p class="text-desc mb-8">
-                        Vitae auctor eu augue ut lectus arcu. Dictum fusce ut placerat orci <br/> nulla pellentesque dignissim
+                    <p class="text-2xl mb-8">
+                        Vitae auctor eu augue ut lectus arcu. Dictum fusce ut placerat orci <br /> nulla pellentesque
+                        dignissim
                         enim. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
                     </p>
                     <button class="btn bg-[#CB935D] p-[1em] text-center rounded-[10%]">Contact Us</button>
                 </div>
-                
+
             </div>
             <div class="flex flex-col justify-center item-center fade-in-right">
                 <img src="./assets/image/justice.png " alt="home-law" class="home-law" width="400px">
@@ -46,7 +50,119 @@
 
         </section>
     </header>
+    <main class="main">
+
+        <!-- ABOUT -->
+        <section class="about mb-8 px-10 fade-container fade-in-down" id="about">
+
+            <div class="flex flex-row max-lg:flex-col ">
+                <div class="w-full p-10 mx-auto">
+                    <img src="./assets/image/blog-2.png" alt="legal-image" width="480px">
+                </div>
+                <div class="pt-6 text-center flex flex-col items-center justify-center">
+                    <p class="mb-8 text-xl">Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                        Latin
+                        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                        professor at Hampden-Sydney College in Virginia, looked up one of the more</p>
+                    <p class="mb-8 text-xl">Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                        Latin
+                        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                        professor at Hampden-Sydney College in Virginia, looked up one of the more
+                        obscure Latin words, consectetur, from a Lorem Ipsum passage, and going.</p>
+                    <p class="mb-8 text-xl">Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                        Latin
+                        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                        professor at Hampden-Sydney College in Virginia, looked.</p>
+
+                    <button class="btn bg-[#CB935D] p-[1em] text-center rounded-[10%] text-xl">Contac Us</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practices Area -->
+        <section class="section mb-8 p-10" id="practice">
+            <div class="practice-header flex flex-col text-center mb-6 justify-center">
+                <h2 class="text-[2.5rem] text-[#182738] font-semibold mb-6">Our Practice Areas</h2>
+                <p class="text-[#182738] text-bold mb-6">Vitae auctor eu augue ut lectus arcu. Dictum fusce ut placerat
+                    orci nulla pellentesque <br /> dignissim enim. Enim nunc faucibus a pellentesque sit amet porttitor
+                    eget dolor.</p>
+            </div>
+            <div class="carousel-container overflow-hidden mx-auto">
+                <div class="carousel-track flex">
+                    <img src="./assets/image/practice-1.png" class="carousel-img w-1/4 max-lg:w-1/2 max-lg:mx-5 "
+                        width="200px" alt="img1">
+                    <img src="./assets/image/practice-2.png" class="carousel-img w-1/4 max-lg:w-1/2 max-lg:mx-5 "
+                        width="200px" alt="img2">
+                    <img src="./assets/image/practice-3.png" class="carousel-img w-1/4 max-lg:w-1/2 max-lg:mx-5 "
+                        width="200px" alt="img3">
+                    <img src="./assets/image/practice-4.png" class="carousel-img w-1/4 max-lg:w-1/2 max-lg:mx-5 "
+                        width="200px" alt="img4">
+                    <!-- Duplicamos las imágenes para el efecto infinito -->
+                    <img src="./assets/image/practice-1.png" class="carousel-img w-1/4 max-lg:w-1/2 max-lg:mx-5 "
+                        width="200px" alt="img1">
+                    <img src="./assets/image/practice-2.png" class="carousel-img w-1/4 max-lg:w-1/2 max-lg:mx-5 "
+                        width="200px" alt="img2">
+                    <img src="./assets/image/practice-3.png" class="carousel-img w-1/4 max-lg:w-1/2 max-lg:mx-5 "
+                        width="200px" alt="img3">
+                    <img src="./assets/image/practice-4.png" class="carousel-img w-1/4 max-lg:w-1/2 max-lg:mx-5 "
+                        width="200px" alt="img4">
+                </div>
+            </div>
+            <section class="statics mt-8 px-10">
+                <div class="practice-header flex flex-col text-center mb-6 justify-center">
+                    <h2 class="text-[2.5em]  text-[#182738] font-semibold mb-6">We’re Advocates for Justice and Right</h2>
+                    <p class="text-[#182738] text-bold mb-6">Vitae auctor eu augue ut lectus arcu. Dictum fusce ut
+                        placerat orci nulla <br> pellentesque dignissim enim. Enim nunc faucibus a pellentesque sit amet
+                        porttitor eget dolor.</p>
+                </div>
+
+                <div class="flex flex-row max-sm:flex-col justify-around items-center">
+                    <div class="card mx-5 text-center">
+                        <span class="text-[2.5rem] font-bold text-[0D1825]">100%</span><br>
+                        <p class="text-[1.5rem] font-semibold">Cases Solved</p>
+                    </div>
+                    <div class="card  mx-5 text-center">
+                        <span class="text-[2.5rem] font-bold text-[0D1825]">50+</span><br>
+                        <p class="text-[1.5rem] font-semibold">Happy Clients</p>
+                    </div>
+                    <div class="card  mx-5 text-center">
+                        <span class="text-[2.5rem] font-bold text-[0D1825]">200</span><br>
+                        <p class="text-[1.5rem] font-semibold">Cases</p>
+                    </div> 
+                    <div class="card  mx-5 text-center">
+                        <span class="text-[2.5rem] font-bold text-[0D1825]">150</span><br>
+                        <p class="text-[1.5rem] font-semibold">Working Hourss</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="lawyer">
+                <div class="card"></div>
+                </div>
+            </section>
+
+            <section id="guie">
+                <div class="img"></div>
+                <div class="text"></div>
+            </section>
+
+            <section class="" id="clients">
+                <div class="title"></div>
+                <div class="text"></div>
+            </section>
+
+            <section class="" id="blogs"></section>
+
+
+    </main>
+    <footer>
+        <div class="logo"></div>
+        <div class="contact"></div>
+        <div class="about"></div>
+        <div class="dir"></div>
+    </footer>
+    <div class="copy"></div>
 </body>
-  <!-- Tailwind vía CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+
 </html>
