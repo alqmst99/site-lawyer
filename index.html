@@ -12,19 +12,21 @@
 
 <body>
     <header class="lin w-full mx-auto">
-        <nav class="flex justify-between items-center h-full pl-[50px] pr-[60px] mb-20">
-            <div class="w-[188px] h-[90px]">
+        <!-- Nav Area -->
+        <nav class="flex justify-between  items-center h-full pl-[50px] pr-[60px] mb-20">
+            <div class="w-[188px] h-[90px]  flex item-center justify-center max-lg:w-full max-lg:h-full">
                 <img src="./assets/image/law-logo.png" alt="img-logo" class="img-logo" width="80px">
             </div>
-            <ul class="flex flex-1 justify-between text-white p-5">
-                <li class="link"><a class="text-2xl uppercase "  href="ref">Home</a></li>
-                <li class="link"><a  class="text-2xl uppercase " href="ref">About US</a></li>
-                <li class="link"><a  class="text-2xl uppercase " href="ref">Practice Area</a></li>
-                <li class="link"><a  class="text-2xl uppercase " href="ref">Blog's</a></li>
-                <li class="link"><a  class="text-2xl uppercase " href="ref ">Contact Us</a></li>
+            <ul class="flex flex-1 justify-between text-white p-5 list">
+                <li class="link"><a class="text-2xl uppercase " href="ref">Home</a></li>
+                <li class="link"><a class="text-2xl uppercase " href="ref">About US</a></li>
+                <li class="link"><a class="text-2xl uppercase " href="ref">Practice Area</a></li>
+                <li class="link"><a class="text-2xl uppercase " href="ref">Blog's</a></li>
+                <li class="link"><a class="text-2xl uppercase " href="ref ">Contact Us</a></li>
 
             </ul>
         </nav>
+        <!-- Home -->
         <section
             class="home section flex flex-row  justify-center item-center max-lg:flex-col-reverse fade-container mb-8 px-10"
             id="home">
@@ -40,7 +42,8 @@
                         dignissim
                         enim. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
                     </p>
-                    <button class="btn bg-[#CB935D] p-[1em] text-center rounded-[10%]">Contact Us</button>
+                    <button class="btn bg-[#CB935D] p-[1em] text-center rounded-[10%]  text-[1.2rem]">Contact
+                        Us</button>
                 </div>
 
             </div>
@@ -50,7 +53,9 @@
 
         </section>
     </header>
-    <main class="main">
+
+    <!-- MAIN -->
+    <main class="main w-full mx-auto">
 
         <!-- ABOUT -->
         <section class="about mb-8 px-10 fade-container fade-in-down" id="about">
@@ -80,7 +85,7 @@
         </section>
 
         <!-- Practices Area -->
-        <section class="section mb-8 p-10" id="practice">
+        <section class="section mx-auto p-10" id="practice">
             <div class="practice-header flex flex-col text-center mb-6 justify-center">
                 <h2 class="text-[2.5rem] text-[#182738] font-semibold mb-6">Our Practice Areas</h2>
                 <p class="text-[#182738] text-bold mb-6">Vitae auctor eu augue ut lectus arcu. Dictum fusce ut placerat
@@ -108,61 +113,134 @@
                         width="200px" alt="img4">
                 </div>
             </div>
-            <section class="statics mt-8 px-10">
-                <div class="practice-header flex flex-col text-center mb-6 justify-center">
-                    <h2 class="text-[2.5em]  text-[#182738] font-semibold mb-6">We’re Advocates for Justice and Right</h2>
-                    <p class="text-[#182738] text-bold mb-6">Vitae auctor eu augue ut lectus arcu. Dictum fusce ut
-                        placerat orci nulla <br> pellentesque dignissim enim. Enim nunc faucibus a pellentesque sit amet
-                        porttitor eget dolor.</p>
+        </section>
+
+        <!-- Stadistics -->
+        <section class="statics mx-auto pb-10">
+            <div class="practice-header flex flex-col text-center mb-6 justify-center">
+                <h2 class="text-[2.5em]  text-[#182738] font-semibold mb-6">We’re Advocates for Justice and Right</h2>
+                <p class="text-[#182738] text-bold mb-6">Vitae auctor eu augue ut lectus arcu. Dictum fusce ut
+                    placerat orci nulla <br> pellentesque dignissim enim. Enim nunc faucibus a pellentesque sit amet
+                    porttitor eget dolor.</p>
+            </div>
+
+            <div class="flex flex-row max-sm:flex-col justify-around items-center">
+                <div class="card mx-5 text-center">
+                    <span class="text-[2.5rem] font-bold text-[0D1825]">100%</span><br>
+                    <p class="text-[1.5rem] font-semibold">Cases Solved</p>
                 </div>
-
-                <div class="flex flex-row max-sm:flex-col justify-around items-center">
-                    <div class="card mx-5 text-center">
-                        <span class="text-[2.5rem] font-bold text-[0D1825]">100%</span><br>
-                        <p class="text-[1.5rem] font-semibold">Cases Solved</p>
-                    </div>
-                    <div class="card  mx-5 text-center">
-                        <span class="text-[2.5rem] font-bold text-[0D1825]">50+</span><br>
-                        <p class="text-[1.5rem] font-semibold">Happy Clients</p>
-                    </div>
-                    <div class="card  mx-5 text-center">
-                        <span class="text-[2.5rem] font-bold text-[0D1825]">200</span><br>
-                        <p class="text-[1.5rem] font-semibold">Cases</p>
-                    </div> 
-                    <div class="card  mx-5 text-center">
-                        <span class="text-[2.5rem] font-bold text-[0D1825]">150</span><br>
-                        <p class="text-[1.5rem] font-semibold">Working Hourss</p>
-                    </div>
+                <div class="card  mx-5 text-center">
+                    <span class="text-[2.5rem] font-bold text-[0D1825]">50+</span><br>
+                    <p class="text-[1.5rem] font-semibold">Happy Clients</p>
                 </div>
-            </section>
-
-
-            <section id="lawyer">
-                <div class="card"></div>
+                <div class="card  mx-5 text-center">
+                    <span class="text-[2.5rem] font-bold text-[0D1825]">200</span><br>
+                    <p class="text-[1.5rem] font-semibold">Cases</p>
                 </div>
-            </section>
+                <div class="card  mx-5 text-center">
+                    <span class="text-[2.5rem] font-bold text-[0D1825]">150</span><br>
+                    <p class="text-[1.5rem] font-semibold">Working Hourss</p>
+                </div>
+            </div>
+        </section>
 
-            <section id="guie">
-                <div class="img"></div>
-                <div class="text"></div>
-            </section>
+        <!-- Experience Guie -->
+        <section id="guie"  class="mx-auto section max-w-full flex flex-row section max-lg:flex-col justify-between item-center bg-[#0D1825] pb-10">
+            <div class="flex item-center p-8 mx-5">
+                <img src="./assets/image/experience.png" alt="experience-img" class="experience-img ">
+            </div>
+            <div class="w-full text-white flex flex-col items-start justify-center p-8 mx-5">
+                <h3 class="text-[#888888] font-semibold mb-3">YOUR FIRST AID</h3>
+                <h2 class="text-[2.5em] uppercase font-bold mb-6">Let Our Experience <br /><span
+                        class="text-[#CB935D]">Be Your Guide</span></h2>
+                <p class="text-withe mb-6 text-[1.5em] w-[70%]">At Judicioworks Advocates and Associates, we bring years
+                    of experience across various practice areas, ensuring you receive informed, effective, and
+                    personalized legal solutions. Our seasoned team, led by Founder Rishabh Malhotra (Advocate), is
+                    dedicated to understanding your unique needs and providing tailored advice and representation. Trust
+                    in our experience to navigate the complexities of the legal landscape and advocate fiercely on your
+                    behalf.</p>
+                <button class="btn bg-[#CB935D] p-[1em] text-center text-[1.2rem] rounded-[10%]"> Contact Us</button>
+            </div>
+        </section>
+        <!-- Our lawyers -->
+        <section id="lawyer"
+            class="mx-auto section max-w-full flex flex-row section max-lg:flex-col justify-between item-center  pb-10">
+            <div class="card">
+                <div class="m-8 flex item-center justify-center">
+                    <img src="./assets/image/blog-1.png" class="rounded-full w-[300px] h-[300px]" alt="lawyer-1">
+                </div>
+                <div class="text-[1.8em] m-8 text-center">
+                    <h3>Dr. Ramirez Turtuelo</h3>
+                    <p><small class="text-[gray]">lawyer family</small></p>
+                </div>
+            </div>
+ <div class="card">
+                <div class="m-8 flex item-center justify-center">
+                    <img src="./assets/image/blog-1.png" class="rounded-full w-[300px] h-[300px]" alt="lawyer-1">
+                </div>
+                <div class="text-[1.8em] m-8 text-center">
+                    <h3>Dr. Nestor Stalyn Zafaronni</h3>
+                    <p><small class="text-[gray]">lawyer family</small></p>
+                </div>
+            </div>
 
-            <section class="" id="clients">
-                <div class="title"></div>
-                <div class="text"></div>
-            </section>
 
-            <section class="" id="blogs"></section>
+             <div class="card">
+                <div class="m-8 flex item-center justify-center">
+                    <img src="./assets/image/blog-1.png" class="rounded-full w-[300px] h-[300px]" alt="lawyer-1">
+                </div>
+                <div class="text-[1.8em] m-8 text-center">
+                    <h3>Dra. Juliana Sacado</h3>
+                    <p><small class="text-[gray]">lawyer family</small></p>
+                </div>
+            </div>
+           
 
+        </section>
+
+        <!-- Client experience -->
+        <section class="" id="clients"> CLIENTS EXPERIENCE
+            <div class="title"></div>
+            <div class="text"><p></div>
+        </section>
+
+        <!-- Blogs -->
+        <section class="" id="blogs">BLOG</section>
 
     </main>
-    <footer>
-        <div class="logo"></div>
-        <div class="contact"></div>
-        <div class="about"></div>
-        <div class="dir"></div>
+    <footer class="flex flex-row max-lg:flex-col justify-between items-start p-10  bg-[#0D1825] text-white">
+        <div class="logo w-full max-w-sm mx-auto flex flex-col justify-center max-lg:items-center ">
+            <div class="img mb-8">
+                <img src="./assets/image/law-logo.png" alt="footer-logo" class="w-[200px]">
+            </div>
+            <div class="desc w-[70%] max-lg:w-full" > <p class="text-[1em]">At Judicioworks Advocates and Associates, we bring years
+                    of experience across various practice areas</p></p></div>
+        </div>
+        <div class="contact w-full max-w-sm mx-auto">
+    <h3 class="text-lg font-semibold mb-4 text-center">Contáctanos</h3>
+    <form class="flex flex-col  gap-4">
+        <input type="text" name="name" placeholder="Nombre" class="p-2 rounded bg-[#182738] text-white focus:outline-none focus:ring-2 focus:ring-[#CB935D]" required>
+        <input type="email" name="email" placeholder="Email" class="p-2 rounded bg-[#182738] text-white focus:outline-none focus:ring-2 focus:ring-[#CB935D]" required>
+        <textarea name="message" rows="3" placeholder="Mensaje" class="p-2 rounded bg-[#182738] text-white focus:outline-none focus:ring-2 focus:ring-[#CB935D]" required></textarea>
+        <button type="submit" class="bg-[#CB935D] text-white font-semibold py-2 rounded hover:bg-[#a97a4a] transition">Enviar</button>
+    </form>
+</div>
+        <div class="about w-full max-w-sm mx-auto px-10">
+            <h3 class="text-lg font-semibold  mb-4 ">ABOUT</h3>
+         <ul class="flex flex-col  items-start text-white">
+                <li class="link mb-4"><a class="text-md uppercase" href="ref">Home</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="ref">About US</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="ref">Practice Area</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="ref">Blog's</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="ref ">Contact Us</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="ref ">Terms</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="ref ">Privacy</a></li>
+
+            </ul>
+        </div>
+        <div class="dir w-full max-w-sm mx-auto text-center">datos de contacto</div>
     </footer>
-    <div class="copy"></div>
+    <div class="copy  flex  item-center justify-center bg-[#0D1825] text-white"><p class="text-[1em] uppercase">los derechos reservados </p></div>
 </body>
 
 </html>

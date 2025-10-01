@@ -38,6 +38,8 @@
 
 .link:hover{
 color: var(--btn-color);
+transform: translate(5px);
+transition-duration: .3s;
 }
 
 .carousel-container {
@@ -72,7 +74,11 @@ color: var(--btn-color);
 
 
 
-
+@media (max-width: 700px) {
+  .list{
+    display: none;
+  }
+}
 
 
 /* ANIMATIONS */
