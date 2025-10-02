@@ -6,7 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/icons/legal-ico.png" type="image/x-icon">
     <link href="./style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- SEO básico -->
+  <title>Santa Fe law firm</title>
+  <meta name="description" content="Estudio jurídico en Santa Fe. Abogados especializados en derecho civil, penal y familiar. Experiencia, confianza y resultados efectivos para nuestros clientes.">
+  <meta name="keywords" content="abogado Santa Fe, estudio jurídico, derecho civil, derecho penal, derecho familiar, asesoría legal, Ramírez Turtuelo">
+  <meta name="author" content="Ramírez Turtuelo Abogados">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="example">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Santa Fe law firm">
+  <meta property="og:description" content="Abogados en Santa Fe especializados en derecho civil, penal y familiar. Experiencia y resultados.">
+  <meta property="og:image" content="exampleassets/preview.jpg">
+  <meta property="og:url" content="example">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ramírez Turtuelo Abogados">
+  <meta name="twitter:description" content="Estudio jurídico en Santa Fe con abogados especialistas en derecho civil, penal y familiar.">
+  <meta name="twitter:image" content="exampleassets/preview.jpg">
+
+  <!-- Schema.org JSON-LD para servicios legales -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Ramírez Turtuelo Abogados",
+    "image": "exampleassets/preview.jpg",
+    "url": "example",
+    "telephone": "+54 342 555 1234",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Falsa 123",
+      "addressLocality": "Santa Fe",
+      "addressRegion": "Santa Fe",
+      "postalCode": "3000",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-31.6333",
+      "longitude": "-60.7000"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/FSTailSolutions/",
+      "https://www.instagram.com/fstailsolution/",
+      "https://www.linkedin.com/"
+    ]
+  }
+  </script>
     <title>Web-Lawyer</title>
 </head>
 
@@ -14,27 +82,27 @@
     <header class="lin w-full mx-auto">
         <!-- Nav Area -->
         <nav class="flex justify-between  items-center h-full pl-[50px] pr-[60px] mb-20">
-            <div class="w-[188px] h-[90px]  flex item-center justify-center max-lg:w-full max-lg:h-full">
-                <img src="./assets/image/law-logo.png" alt="img-logo" class="img-logo" width="80px">
-            </div>
+            <figure class="w-[188px] h-[90px]  flex  justify-center max-lg:w-full max-lg:h-full">
+                <img src="./assets/image/law-logo.png" alt="img-logo" class="img-logo-studio-lawyer" width="80px">
+            </figure>
             <ul class="flex flex-1 justify-between text-white p-5 list">
-                <li class="link"><a class="text-2xl uppercase " href="ref">Home</a></li>
-                <li class="link"><a class="text-2xl uppercase " href="ref">About US</a></li>
-                <li class="link"><a class="text-2xl uppercase " href="ref">Practice Area</a></li>
-                <li class="link"><a class="text-2xl uppercase " href="ref">Blog's</a></li>
-                <li class="link"><a class="text-2xl uppercase " href="ref ">Contact Us</a></li>
+                <li class="link"><a class="text-2xl uppercase " href="#home">Home</a></li>
+                <li class="link"><a class="text-2xl uppercase " href="#about">About US</a></li>
+                <li class="link"><a class="text-2xl uppercase " href="#practice">Practice Area</a></li>
+                <li class="link"><a class="text-2xl uppercase " href="#blogs">Blog's</a></li>
+                <li class="link"><a class="text-2xl uppercase " href="#contact ">Contact Us</a></li>
 
             </ul>
         </nav>
         <!-- Home -->
         <section
-            class="home section flex flex-row  justify-center item-center max-lg:flex-col-reverse fade-container mb-8 px-10"
+            class="home section flex flex-row  justify-center  max-lg:flex-col-reverse fade-container mb-8 px-10"
             id="home">
-            <div class="card container text-cester text-white flex flex-1 flex-col p-12 fade-in-left">
+            <div class="card container  text-white flex flex-1 flex-col p-12 fade-in-left">
                 <h3 class="text-semibold mb-8">GET FIERCE LEGAL SUPPORT</h3>
                 <div class="title mb-6">
-                    <h2 class="text-[2.5em] text-white text-bold">We Provide The Best
-                        Possible <span class="span text-[#CB935D]"> Legal Services</span></h2>
+                    <h1 class="text-[2.5em] text-white text-bold">We Provide The Best
+                        Possible <span class="span text-[#CB935D]"> Legal Services</span></h1>
                 </div>
                 <div class="desc">
                     <p class="text-2xl mb-8">
@@ -42,14 +110,14 @@
                         dignissim
                         enim. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
                     </p>
-                    <button class="btn bg-[#CB935D] p-[1em] text-center rounded-[10%]  text-[1.2rem]">Contact
+                    <button class="btn bg-[#CB935D] p-[1em] text-center rounded-[10%]  text-[1.2rem]" type="button" onclick="location.href='#contact'">Contact
                         Us</button>
                 </div>
 
             </div>
-            <div class="flex flex-col justify-center item-center fade-in-right">
-                <img src="./assets/image/justice.png " alt="home-law" class="home-law" width="400px">
-            </div>
+            <figure class="flex flex-col justify-center  fade-in-right">
+                <img src="./assets/image/justice.png " alt="image-home-lawyer" class="home-law" width="400px">
+            </figure>
 
         </section>
     </header>
@@ -61,9 +129,9 @@
         <section class="about mb-8 px-10 fade-container fade-in-down" id="about">
 
             <div class="flex flex-row max-lg:flex-col ">
-                <div class="w-full p-10 mx-auto">
-                    <img src="./assets/image/blog-2.png" alt="legal-image" width="480px">
-                </div>
+                <figure class="w-full p-10 mx-auto">
+                    <img src="./assets/image/blog-2.png" alt="about-lawyer-image" width="480px">
+                </figure>
                 <div class="pt-6 text-center flex flex-col items-center justify-center">
                     <p class="mb-8 text-xl">Lorem Ipsum is not simply random text. It has roots in a piece of classical
                         Latin
@@ -79,13 +147,13 @@
                         literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
                         professor at Hampden-Sydney College in Virginia, looked.</p>
 
-                    <button class="btn bg-[#CB935D] p-[1em] text-center rounded-[10%] text-xl">Contac Us</button>
+                    <button class="btn bg-[#CB935D] p-[1em] text-center rounded-[10%] text-xl" type="button" onclick="location.href='#contact'">Contac Us</button>
                 </div>
             </div>
         </section>
 
         <!-- Practices Area -->
-        <section class="section mx-auto p-10" id="practice">
+        <section class="section mx-auto p-10 " id="practice">
             <div class="practice-header flex flex-col text-center mb-6 justify-center">
                 <h2 class="text-[2.5rem] text-[#182738] font-semibold mb-6">Our Practice Areas</h2>
                 <p class="text-[#182738] text-bold mb-6">Vitae auctor eu augue ut lectus arcu. Dictum fusce ut placerat
@@ -139,44 +207,44 @@
                 </div>
                 <div class="card  mx-5 text-center">
                     <span class="text-[2.5rem] font-bold text-[0D1825]">150</span><br>
-                    <p class="text-[1.5rem] font-semibold">Working Hourss</p>
+                    <p class="text-[1.5rem] font-semibold">Working Hours</p>
                 </div>
             </div>
         </section>
 
         <!-- Experience Guie -->
-        <section id="guie"  class="mx-auto section max-w-full flex flex-row section max-lg:flex-col justify-between item-center bg-[#0D1825] pb-10">
-            <div class="flex item-center p-8 mx-5">
+        <section id="guie"
+            class="mx-auto section max-w-full flex flex-row section max-lg:flex-col justify-between  bg-[#0D1825] pb-10">
+            <div class="flex  p-8 mx-5">
                 <img src="./assets/image/experience.png" alt="experience-img" class="experience-img ">
             </div>
             <div class="w-full text-white flex flex-col items-start justify-center p-8 mx-5">
                 <h3 class="text-[#888888] font-semibold mb-3">YOUR FIRST AID</h3>
                 <h2 class="text-[2.5em] uppercase font-bold mb-6">Let Our Experience <br /><span
                         class="text-[#CB935D]">Be Your Guide</span></h2>
-                <p class="text-withe mb-6 text-[1.5em] w-[70%]">At Judicioworks Advocates and Associates, we bring years
+                <p class=" mb-6 text-[1.5em] w-[70%]">At Judicioworks Advocates and Associates, we bring years
                     of experience across various practice areas, ensuring you receive informed, effective, and
                     personalized legal solutions. Our seasoned team, led by Founder Rishabh Malhotra (Advocate), is
                     dedicated to understanding your unique needs and providing tailored advice and representation. Trust
                     in our experience to navigate the complexities of the legal landscape and advocate fiercely on your
                     behalf.</p>
-                <button class="btn bg-[#CB935D] p-[1em] text-center text-[1.2rem] rounded-[10%]"> Contact Us</button>
+                <button class="btn bg-[#CB935D] p-[1em] text-center text-[1.2rem] rounded-[10%]" type="button" onclick="location.href='#contact'"> Contact Us</button>
             </div>
         </section>
         <!-- Our lawyers -->
-        <section id="lawyer"
-            class="mx-auto section max-w-full flex flex-row section max-lg:flex-col justify-between item-center  pb-10">
+        <section id="lawyer" class="mx-auto section max-w-full flex flex-row section max-lg:flex-col justify-between pb-10">
             <div class="card">
-                <div class="m-8 flex item-center justify-center">
-                    <img src="./assets/image/blog-1.png" class="rounded-full w-[300px] h-[300px]" alt="lawyer-1">
+                <div class="m-8 flex  justify-center">
+                    <img src="./assets/image/blog-1.png" class="rounded-full w-[300px] h-[300px]" alt="lawyer-image-example-1">
                 </div>
                 <div class="text-[1.8em] m-8 text-center">
                     <h3>Dr. Ramirez Turtuelo</h3>
                     <p><small class="text-[gray]">lawyer family</small></p>
                 </div>
             </div>
- <div class="card">
-                <div class="m-8 flex item-center justify-center">
-                    <img src="./assets/image/blog-1.png" class="rounded-full w-[300px] h-[300px]" alt="lawyer-1">
+            <div class="card">
+                <div class="m-8 flex  justify-center">
+                    <img src="./assets/image/blog-1.png" class="rounded-full w-[300px] h-[300px]" alt="lawyer-image-example-2">
                 </div>
                 <div class="text-[1.8em] m-8 text-center">
                     <h3>Dr. Nestor Stalyn Zafaronni</h3>
@@ -185,62 +253,250 @@
             </div>
 
 
-             <div class="card">
-                <div class="m-8 flex item-center justify-center">
-                    <img src="./assets/image/blog-1.png" class="rounded-full w-[300px] h-[300px]" alt="lawyer-1">
+            <div class="card">
+                <div class="m-8 flex  justify-center">
+                    <img src="./assets/image/blog-1.png" class="rounded-full w-[300px] h-[300px]" alt="lawyer-image-example-3">
                 </div>
                 <div class="text-[1.8em] m-8 text-center">
                     <h3>Dra. Juliana Sacado</h3>
                     <p><small class="text-[gray]">lawyer family</small></p>
                 </div>
             </div>
-           
+
 
         </section>
 
         <!-- Client experience -->
-        <section class="" id="clients"> CLIENTS EXPERIENCE
-            <div class="title"></div>
-            <div class="text"><p></div>
+        <section class="w-full flex flex-col items-center " id="clients">
+            <h2 class="text-2xl font-bold mb-6 text-[#182738] uppercase">Testimonials</h2>
+            <div class="relative w-full max-w-full  mx-auto">
+                <div id="carousel-cards" class="overflow-hidden rounded-lg bg-white text-[#182738] shadow-lg" >
+                    <!-- Card 1: Presentación -->
+                    <div class="carousel-card flex flex-row p-8 max-h-[350px] h-full max-lg:flex-col" >
+                        <div class="flex flex-col items-start justify-center p-2">
+                            <h2 class="text-[2.5em] uppercase font-bold">What Our Clients <br /><span
+                                    class="text-[#CB935D]">Are Saying</span></h2>
+                            <p class="mb-6">En Judicioworks Advocates and Associates, nuestros clientes son nuestra prioridad. <br />
+                                Con años de experiencia y casos exitosos, ofrecemos atención personalizada y resultados
+                                reales.</p>
+                            <button class="btn bg-[#CB935D] p-[1em] text-star rounded-[10%] text-xl" type="button" onclick="location.href='#contact'">Contac
+                                Us</button>
+                        </div>
+                        <div class="flex flex-col justify-start items-center mx-2">
+                            <p class="text-[1.2em]">At Judicioworks Advocates and Associates, we bring years of
+                                experience across various practice areas, ensuring you receive informed,<br />
+                                effective, and personalized legal solutions. Our seasoned team,<br /> led by Founder
+                                Rishabh Malhotra (Advocate), is dedicated to understanding your unique needs and
+                                providing tailored advice and representation.<br /> Trust in our experience to navigate
+                                the complexities of the legal landscape and advocate fiercely on your behalf.</p>
+                            <p class="font-bold">Carlos toca culo</p>
+                            <span class="text-[gray]">CEO, Colitas consultora</span>
+                        </div>
+                    </div>
+                    <!-- Card 2: Testimonio 1 -->
+                    <div class="carousel-card flex flex-row p-8 max-h-[350px] h-full hidden  max-lg:flex-col">
+                         <div class="flex flex-col items-center">
+                             <h2 class="text-[2.5em] uppercase font-bold mb-6">Testimonio de <br/> Juan Pérez</h2>
+                        <p>"Excelente atención y profesionalismo. Me ayudaron a resolver mi caso rápidamente y con
+                            resultados favorables."</p>
+                         </div>
+                        <div class="flex flex-col justify-start items-center mx-2">
+                             <p class="text-[1.2em] mb-8">At Judicioworks Advocates and Associates, we bring years of
+                                experience across various practice areas, ensuring you receive informed,<br />
+                                effective, and personalized legal solutions. Our seasoned team,<br /> led by Founder
+                                Rishabh Malhotra (Advocate), is dedicated to understanding your unique needs and
+                                providing tailored advice and representation.<br /> Trust in our experience to navigate
+                                the complexities of the legal landscape and advocate fiercely on your behalf.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3: Testimonio 2 -->
+                      <div class="carousel-card flex flex-row p-8 max-h-[350px] h-full hidden  max-lg:flex-col" >
+                         <div class="flex flex-col items-center">
+                              <h2 class="text-[2.5em] uppercase font-bold mb-6">Testimonio de <br/> Arturo Miron</h2>
+                        <p>"Excelente atención y profesionalismo. Me ayudaron a resolver mi caso rápidamente y con
+                            resultados favorables."</p>
+                         </div>
+                        <div class="flex flex-col justify-start items-center mx-2">
+                             <p class="text-[1.2em] mb-8">At Judicioworks Advocates and Associates, we bring years of
+                                experience across various practice areas, ensuring you receive informed,<br />
+                                effective, and personalized legal solutions. Our seasoned team,<br /> led by Founder
+                                Rishabh Malhotra (Advocate), is dedicated to understanding your unique needs and
+                                providing tailored advice and representation.<br /> Trust in our experience to navigate
+                                the complexities of the legal landscape and advocate fiercely on your behalf.</p>
+                        </div>
+                    </div>
+                    <!-- Card 4: Testimonio 3 -->
+                      <div class="carousel-card flex flex-row p-8 max-h-[350px] h-full hidden  max-lg:flex-col" >
+                         <div class="flex flex-col items-center">
+                              <h2 class="text-[2.5em] uppercase font-bold mb-6">Testimonio  de <br/> Andrea Goloza</h2>
+                        <p>"Excelente atención y profesionalismo. Me ayudaron a resolver mi caso rápidamente y con
+                            resultados favorables."</p>
+                         </div>
+                        <div class="flex flex-col justify-start items-center mx-2">
+                             <p class="text-[1.2em] mb-8">At Judicioworks Advocates and Associates, we bring years of
+                                experience across various practice areas, ensuring you receive informed,<br />
+                                effective, and personalized legal solutions. Our seasoned team,<br /> led by Founder
+                                Rishabh Malhotra (Advocate), is dedicated to understanding your unique needs and
+                                providing tailored advice and representation.<br /> Trust in our experience to navigate
+                                the complexities of the legal landscape and advocate fiercely on your behalf.</p>
+                        </div>
+                    </div>
+                <!-- Indicadores -->
+                <div class="flex justify-center gap-3 mt-4 pb-3">
+                    <button class="carousel-dot w-4 h-4 rounded-full bg-[#CB935D] opacity-80" data-index="0"></button>
+                    <button class="carousel-dot w-4 h-4 rounded-full bg-gray-400 opacity-50" data-index="1"></button>
+                    <button class="carousel-dot w-4 h-4 rounded-full bg-gray-400 opacity-50" data-index="2"></button>
+                    <button class="carousel-dot w-4 h-4 rounded-full bg-gray-400 opacity-50" data-index="3"></button>
+                </div>
+            </div>
         </section>
 
         <!-- Blogs -->
-        <section class="" id="blogs">BLOG</section>
+        <section class="w-full flex flex-col items-center pb-6 bg-[#0D1825] pt-10" id="blogs">
+            <h2 class="text-2xl font-bold mb-6 text-white">BLOG</h2>
+            <div id="blog-cards" class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+                <!-- Card 1 -->
+                <div class="blog-card bg-white rounded-lg shadow p-6">
+                    <div class="m-0 flex  justify-center">
+                    <img src="./assets/image/blog-1.png"  alt="lawyer-1">
+                </div>
+                <div class="text-[1.8em] m-8 text-center">
+                  <h3 class="text-lg font-semibold mb-2">Título del Blog 1</h3>
+                    <p class="mb-2">Resumen del contenido del blog 1...</p>
+                    <a href="#" class="text-[#CB935D] font-semibold">Leer más</a>
+                </div>
+                  
+                </div>
+                <!-- Card 2 -->
+                  <div class="blog-card bg-white rounded-lg shadow p-6">
+                    <div class="m-0 flex  justify-center">
+                    <img src="./assets/image/blog-2.png"  alt="lawyer-1">
+                </div>
+                <div class="text-[1.8em] m-8 text-center">
+                  <h3 class="text-lg font-semibold mb-2">Título del Blog 2</h3>
+                    <p class="mb-2">Resumen del contenido del blog 2...</p>
+                    <a href="#" class="text-[#CB935D] font-semibold">Leer más</a>
+                </div>
+                  
+                </div>
+                <!-- Card 3 -->
+                  <div class="blog-card bg-white rounded-lg shadow p-6">
+                    <div class="m-0 flex  justify-center">
+                    <img src="./assets/image/blog-3.png"  alt="lawyer-1">
+                </div>
+                <div class="text-[1.8em] m-8 text-center">
+                  <h3 class="text-lg font-semibold mb-2">Título del Blog 3</h3>
+                    <p class="mb-2">Resumen del contenido del blog 3...</p>
+                    <a href="#" class="text-[#CB935D] font-semibold">Leer más</a>
+                </div>
+                  
+                </div>
+                <!-- Card 4 -->
+                   <div class="blog-card bg-white rounded-lg shadow p-6">
+                    <div class="m-0 flex  justify-center">
+                    <img src="./assets/image/blog-3.png"  alt="lawyer-1">
+                </div>
+                <div class="text-[1.8em] m-8 text-center">
+                  <h3 class="text-lg font-semibold mb-2">Título del Blog 4</h3>
+                    <p class="mb-2">Resumen del contenido del blog 4...</p>
+                    <a href="#" class="text-[#CB935D] font-semibold">Leer más</a>
+                </div>
+                  
+                </div>
+                <!-- Card 5 -->
+                  <div class="blog-card bg-white rounded-lg shadow p-6">
+                    <div class="m-0 flex  justify-center">
+                    <img src="./assets/image/blog-2.png"  alt="lawyer-1">
+                </div>
+                <div class="text-[1.8em] m-8 text-center">
+                  <h3 class="text-lg font-semibold mb-2">Título del Blog 5</h3>
+                    <p class="mb-2">Resumen del contenido del blog 5...</p>
+                    <a href="#" class="text-[#CB935D] font-semibold">Leer más</a>
+                </div>
+                  
+                </div>
+                <!-- Card 6 -->
+                  <div class="blog-card bg-white rounded-lg shadow p-6">
+                    <div class="m-0 flex  justify-center">
+                    <img src="./assets/image/blog-1.png"  alt="lawyer-1">
+                </div>
+                <div class="text-[1.8em] m-8 text-center">
+                  <h3 class="text-lg font-semibold mb-2">Título del Blog 6</h3>
+                    <p class="mb-2">Resumen del contenido del blog 6...</p>
+                    <a href="#" class="text-[#CB935D] font-semibold">Leer más</a>
+                </div>
+                  
+                </div>
+                <!-- Puedes agregar más cards aquí, solo ponles la clase "hidden" -->
+            </div>
+            <button id="ver-mas"
+                class="mt-8 bg-[#CB935D] text-white font-semibold py-2 px-6 rounded hover:bg-[#a97a4a] transition">Ver
+                más</button>
+        </section>
 
     </main>
-    <footer class="flex flex-row max-lg:flex-col justify-between items-start p-10  bg-[#0D1825] text-white">
+    <footer class="flex flex-row max-lg:flex-col justify-start self-center items-start p-5  bg-[#0D1825] text-white">
         <div class="logo w-full max-w-sm mx-auto flex flex-col justify-center max-lg:items-center ">
             <div class="img mb-8">
-                <img src="./assets/image/law-logo.png" alt="footer-logo" class="w-[200px]">
+                <img src="./assets/image/law-logo.png" alt="footer-logo" class="w-[150px]">
             </div>
-            <div class="desc w-[70%] max-lg:w-full" > <p class="text-[1em]">At Judicioworks Advocates and Associates, we bring years
-                    of experience across various practice areas</p></p></div>
+            <div class="desc w-[70%] max-lg:w-full">
+                <p class="text-[1em]">At Judicioworks Advocates and Associates, we bring years
+                    of experience across various practice areas</p>
+                </p>
+            </div>
         </div>
-        <div class="contact w-full max-w-sm mx-auto">
-    <h3 class="text-lg font-semibold mb-4 text-center">Contáctanos</h3>
-    <form class="flex flex-col  gap-4">
-        <input type="text" name="name" placeholder="Nombre" class="p-2 rounded bg-[#182738] text-white focus:outline-none focus:ring-2 focus:ring-[#CB935D]" required>
-        <input type="email" name="email" placeholder="Email" class="p-2 rounded bg-[#182738] text-white focus:outline-none focus:ring-2 focus:ring-[#CB935D]" required>
-        <textarea name="message" rows="3" placeholder="Mensaje" class="p-2 rounded bg-[#182738] text-white focus:outline-none focus:ring-2 focus:ring-[#CB935D]" required></textarea>
-        <button type="submit" class="bg-[#CB935D] text-white font-semibold py-2 rounded hover:bg-[#a97a4a] transition">Enviar</button>
-    </form>
-</div>
-        <div class="about w-full max-w-sm mx-auto px-10">
+        <div class="about w-full max-w-[150px] mx-auto">
             <h3 class="text-lg font-semibold  mb-4 ">ABOUT</h3>
-         <ul class="flex flex-col  items-start text-white">
-                <li class="link mb-4"><a class="text-md uppercase" href="ref">Home</a></li>
-                <li class="link mb-4"><a class="text-md uppercase" href="ref">About US</a></li>
-                <li class="link mb-4"><a class="text-md uppercase" href="ref">Practice Area</a></li>
-                <li class="link mb-4"><a class="text-md uppercase" href="ref">Blog's</a></li>
-                <li class="link mb-4"><a class="text-md uppercase" href="ref ">Contact Us</a></li>
-                <li class="link mb-4"><a class="text-md uppercase" href="ref ">Terms</a></li>
-                <li class="link mb-4"><a class="text-md uppercase" href="ref ">Privacy</a></li>
+            <ul class="flex flex-col  items-start text-white">
+                <li class="link mb-4"><a class="text-md uppercase" href="#home">Home</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="#about">About US</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="#practice">Practice Area</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="#blogs">Blog's</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="#contact ">Contact Us</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="./pages/terms.html ">Terms</a></li>
+                <li class="link mb-4"><a class="text-md uppercase" href="./pages/privacy.html ">Privacy</a></li>
 
             </ul>
         </div>
-        <div class="dir w-full max-w-sm mx-auto text-center">datos de contacto</div>
+        <div class="contact w-full max-w-sm mx-auto" id="contact">
+            <h3 class="text-lg font-semibold mb-4 text-center">Contáctanos</h3>
+            <form class="flex flex-col  gap-4">
+                <input type="text" name="name" placeholder="Nombre"
+                    class="p-2 rounded bg-[#182738] text-white focus:outline-none focus:ring-2 focus:ring-[#CB935D]"
+                    required>
+                <input type="email" name="email" placeholder="Email"
+                    class="p-2 rounded bg-[#182738] text-white focus:outline-none focus:ring-2 focus:ring-[#CB935D]"
+                    required>
+                <textarea name="message" rows="3" placeholder="Mensaje"
+                    class="p-2 rounded bg-[#182738] text-white focus:outline-none focus:ring-2 focus:ring-[#CB935D]"
+                    required></textarea>
+                <button type="submit"
+                    class="bg-[#CB935D] text-white font-semibold py-2 rounded hover:bg-[#a97a4a] transition">Enviar</button>
+            </form>
+        </div>
+        <div class="dir w-full max-w-md mx-auto text-center ">
+            <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+            <ul class="flex flex-col items-start text-white gap-2">
+                <li class="flex items-center mb-2">
+                    <span class="mr-2"><i class="ri-map-pin-2-fill"></i></span>
+                    <span class="text-md">8-1-248/OU/48-8, AIG Hospital, Lanco Hills</span>
+                </li>
+                <li class="flex items-center mb-2">
+                    <span class="mr-2"><i class="ri-phone-fill"></i></span>
+                    <span class="text-md">+54 9342 5428918</span>
+                </li>
+                <li class="flex items-center mb-2">
+                    <span class="mr-2"><i class="ri-mail-fill"></i></span>
+                    <span class="text-md">example_ejp@emailexample.com</span>
+                </li>
+            </ul>
+        </div>
     </footer>
-    <div class="copy  flex  item-center justify-center bg-[#0D1825] text-white"><p class="text-[1em] uppercase">los derechos reservados </p></div>
+   <div class="copy flex items-center justify-center bg-[#0D1825] text-white">
+    <p class="text-[1em] uppercase">© 2025 FSTAIL Solutions - Todos los derechos reservados</p>
+</div>
 </body>
+<script src="./assets/scripts/main.js"></script>
 
 </html>
