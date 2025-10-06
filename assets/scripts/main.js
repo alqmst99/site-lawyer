@@ -46,53 +46,76 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//validation Form
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
+//Validacion de formularios
 
-  // Obtener valores
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("#contact form");
 
-  // Campos de error
-  const errorName = document.getElementById("error-name");
-  const errorEmail = document.getElementById("error-email");
-  const errorMessage = document.getElementById("error-message");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // Evita el envío automático
 
-  let isValid = true;
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
 
-  // Reset de mensajes
-  [errorName, errorEmail, errorMessage].forEach(el => {
-    el.textContent = "";
-    el.classList.add("hidden");
+    // Limpia mensajes previos
+    clearErrors(form);
+
+    let valid = true;
+
+    // Validación de nombre
+    if (name.length < 2) {
+      showError(form.name, "El nombre debe tener al menos 2 caracteres.");
+      valid = false;
+    }
+
+    // Validación de email
+    if (!validateEmail(email)) {
+      showError(form.email, "Por favor ingresa un email válido.");
+      valid = false;
+    }
+
+    // Validación de mensaje
+    if (message.length < 10) {
+      showError(form.message, "El mensaje debe tener al menos 10 caracteres.");
+      valid = false;
+    }
+
+    if (valid) {
+      showSuccess(form, "✅ Mensaje enviado con éxito.");
+      form.reset();
+    }
   });
 
-  // Validar nombre
-  if (name.length < 3) {
-    errorName.textContent = "El nombre debe tener al menos 3 caracteres.";
-    errorName.classList.remove("hidden");
-    isValid = false;
+  // Función para validar formato de email
+  function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
   }
 
-  // Validar email
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    errorEmail.textContent = "Ingresa un email válido.";
-    errorEmail.classList.remove("hidden");
-    isValid = false;
+  // Muestra errores debajo del campo
+  function showError(input, message) {
+    input.classList.add("ring-2", "ring-red-500");
+    const error = document.createElement("small");
+    error.classList.add("text-red-400", "mt-1", "block");
+    error.innerText = message;
+    input.insertAdjacentElement("afterend", error);
   }
 
-  // Validar mensaje
-  if (message.length < 10) {
-    errorMessage.textContent = "El mensaje debe tener al menos 10 caracteres.";
-    errorMessage.classList.remove("hidden");
-    isValid = false;
+  // Limpia errores previos
+  function clearErrors(form) {
+    form.querySelectorAll("small").forEach((el) => el.remove());
+    form.querySelectorAll("input, textarea").forEach((el) => {
+      el.classList.remove("ring-2", "ring-red-500");
+    });
   }
 
-  if (isValid) {
-    // Acá podrías mandar el form con fetch/AJAX
-    alert("Formulario enviado correctamente ✅");
-    document.getElementById("contactForm").reset();
+  // Muestra un mensaje de éxito
+  function showSuccess(form, message) {
+    const success = document.createElement("p");
+    success.classList.add("text-green-400", "mt-4", "text-center");
+    success.innerText = message;
+    form.appendChild(success);
+    setTimeout(() => success.remove(), 3000);
   }
 });
