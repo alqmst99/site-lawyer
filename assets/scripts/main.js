@@ -3,7 +3,7 @@ const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu-links");
 btn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
-btn.classList.toggle("none")
+btn.classList.toggle("opacity-0")
 }
 );
 
