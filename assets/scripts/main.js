@@ -1,3 +1,14 @@
+//button menu
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu-links");
+btn.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+btn.classList.toggle("none")
+}
+);
+
+
+
 //Carrousel manual
 
 const cards = document.querySelectorAll('.carousel-card');
@@ -118,4 +129,23 @@ document.addEventListener("DOMContentLoaded", () => {
     form.appendChild(success);
     setTimeout(() => success.remove(), 3000);
   }
+});
+//observer Fade-in
+document.addEventListener("DOMContentLoaded", () => {
+  const faders = document.querySelectorAll(".fade-in-up, .fade-in-down, .fade-in-left, .fade-in-right");
+
+  const appearOptions = {
+    threshold: 0.2,  // se activa cuando el 20% del elemento es visible
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target); // para que solo se anime una vez
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => appearOnScroll.observe(fader));
 });

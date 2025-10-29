@@ -54,23 +54,20 @@ transition-duration: .3s;
 
 .carousel-track {
   display: flex;
-  width: calc(8 * 15%); /* 8 imágenes, cada una 25% del ancho */
-  animation: scrollCarousel 8s linear infinite;
+  width: calc(200%); /* 8 imágenes, cada una 25% del ancho */
+  animation: scrollCarousel 20s linear infinite;
 }
 
 .carousel-img {
   width: 25%;
   height: 300px;
+  flex: 0 0 auto;
  filter: drop-shadow(5px 9px 20px var(--bg-secondary-initial));
   flex-shrink: 0;
   object-fit: cover;
 }
 
 
-@keyframes scrollCarousel {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
 
 
 
@@ -83,67 +80,29 @@ transition-duration: .3s;
 
 /* ANIMATIONS */
 /* Carrousel*/
+
 @keyframes scrollCarousel {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
-/* Fade In Up */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.fade-in-up {
-  animation: fadeInUp 0.8s ease-out;
-}
-
-/* Fade In Down */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.fade-in-down {
-  animation: fadeInDown 0.8s ease-out;
-}
-
-/* Fade In Left */
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.fade-in-left {
-  animation: fadeInLeft 0.8s ease-out;
-}
-
-/* Fade In Right */
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+/* Estado inicial: invisible y desplazado */
+.fade-in-up,
+.fade-in-down,
+.fade-in-left,
 .fade-in-right {
-  animation: fadeInRight 0.8s ease-out;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Dirección específica */
+.fade-in-down { transform: translateY(-20px); }
+.fade-in-left { transform: translateX(-20px); }
+.fade-in-right { transform: translateX(20px); }
+
+/* Estado final */
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
